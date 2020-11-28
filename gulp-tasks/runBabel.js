@@ -6,11 +6,11 @@ const commonjs = require('rollup-plugin-commonjs');
 const { terser } = require('rollup-plugin-terser');
 
 const runBabel = () => {
-	return src('./src/js/**/*')
-		.pipe(
-			rollup({ plugins: [babel(), resolve(), commonjs(), terser()] }, 'umd')
-		)
-		.pipe(dest('dist/js'));
+  return src('./src/js/**/*')
+    .pipe(
+      rollup({ plugins: [babel(), resolve(), commonjs(), terser()] }, 'umd')
+    )
+    .pipe(dest('dist/js'));
 };
 
 module.exports = runBabel;
