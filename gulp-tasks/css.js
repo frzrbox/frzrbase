@@ -2,10 +2,16 @@ const { dest, src } = require('gulp');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-var nested = require('postcss-nested');
+const nested = require('postcss-nested');
+const postCssImport = require('postcss-import');
 
-const css = () => {
-  const plugins = [autoprefixer(), cssnano(), nested];
+const css = (file) => {
+  const plugins = [
+    autoprefixer(),
+    nested,
+    postCssImport({ root: 'src/css/' }),
+    cssnano(),
+  ];
   return src('./src/css/**/*').pipe(postcss(plugins)).pipe(dest('dist/css'));
 };
 
