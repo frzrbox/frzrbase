@@ -5,7 +5,7 @@ const cssnano = require('cssnano');
 const nested = require('postcss-nested');
 const postCssImport = require('postcss-import');
 
-const css = (file) => {
+const css = () => {
   const plugins = [
     autoprefixer(),
     nested,
