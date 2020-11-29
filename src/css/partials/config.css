@@ -1,9 +1,8 @@
-:root{
---color--primary: #6246EA;
---color--secondary: #E45858;
---color--tertiary: #D1D1E9;
---color--heading: #2B2C34;
---color--body: #2B2C34;
---color--background: #FFFFFE;
+:root {
+  --color--primary: #6246EA;
+  --color--secondary: #E45858;
+  --color--tertiary: #D1D1E9;
+  --color--heading: #2B2C34;
+  --color--body: #2B2C34;
+  --color--background: #FFFFFE;
 }
-
