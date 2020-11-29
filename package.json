@@ -25,6 +25,7 @@
     "gulp": "^4.0.2",
     "gulp-better-rollup": "^4.0.1",
     "gulp-postcss": "^9.0.0",
+    "html-minifier": "^4.0.0",
     "husky": "^4.3.0",
     "postcss": "^8.1.10",
     "postcss-import": "^13.0.0",

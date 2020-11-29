@@ -1,5 +1,5 @@
 // Transforms
-const htmlMinTransform = require('./site/transforms/html-min.js');
+const htmlMinTransform = require('./src/transforms/html-min.js');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
