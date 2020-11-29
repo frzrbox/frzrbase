@@ -1,4 +1,6 @@
 module.exports = (config) => {
+  config.addWatchTarget('./src/js/');
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

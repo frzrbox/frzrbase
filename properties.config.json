@@ -1,0 +1,12 @@
+{
+  "root": {
+    "color": {
+      "primary": "#6246EA",
+      "secondary": "#E45858",
+      "tertiary": "#D1D1E9",
+      "heading": "#2B2C34",
+      "body": "#2B2C34",
+      "background": "#FFFFFE"
+    }
+  }
+}
