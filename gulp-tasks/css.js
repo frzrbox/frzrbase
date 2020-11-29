@@ -22,7 +22,7 @@ const calculateOutput = ({ history }) => {
   // to the _includes directory, so nunjucks can include it
   // directly in a <style>
   if (criticalStyles.includes(sourceFileName)) {
-    response = './src/_includes/css';
+    response = './src/_includes/critical';
   }
 
   return response;
