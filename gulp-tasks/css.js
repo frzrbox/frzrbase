@@ -35,7 +35,7 @@ const css = () => {
     postCssImport({ root: 'src/css/' }),
     cssnano(),
   ];
-  return src('./src/css/**/*')
+  return src('./src/css/*.css')
     .pipe(postcss(plugins))
     .pipe(dest(calculateOutput, { sourcemaps: !isProduction }));
 };
