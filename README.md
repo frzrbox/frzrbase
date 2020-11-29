@@ -5,5 +5,5 @@ An 11ty starter with postcss, babel and design tokens built-in.
 ## Get started
 
 ```shell
-npx degit frzrbox:frzrbase <app-name>
+npx degit https://github.com/frzrbox/frzrbase\#main  <app-name>
 ```
