@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production eleventy",
+    "start": "npm run tokens && npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "production": "npm run tokens && NODE_ENV=production npx gulp && NODE_ENV=production eleventy",
+    "tokens": "generate-properties --out src/css/partials/config.css",
     "lint": "eslint --ext .js"
   },
   "author": "frzrbox",
@@ -20,6 +21,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-node": "^4.1.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "generate-custom-properties": "^0.2.0",
     "gulp": "^4.0.2",
     "gulp-better-rollup": "^4.0.1",
     "gulp-postcss": "^9.0.0",
